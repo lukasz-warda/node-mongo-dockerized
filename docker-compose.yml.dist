@@ -10,6 +10,8 @@ services:
       - mongo_db:/data/db
     ports:
       - "<host>:27017:27017"
+    #create root user in admin db, then uncomment and login, than create your db and user for it
+    #command:[--auth]
   #Node API service
   api:
     container_name: node
